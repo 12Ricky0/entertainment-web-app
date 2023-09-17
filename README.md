@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/12Ricky0/entertainment-web-app.git](https://github.com/12Ricky0/entertainment-web-app.git)
+- Live Site URL: [https://entertainment-web-app-6i77.vercel.app/](https://entertainment-web-app-6i77.vercel.app/)
 
 ## My process
 
