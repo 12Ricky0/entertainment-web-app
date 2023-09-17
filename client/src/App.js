@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
 
 export const BookmarkContext = createContext()
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://entertainment-web-app-theta.vercel.app';
 
 
 function App() {
