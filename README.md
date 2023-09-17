@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![./client/public/assets/bmk.png](./client/public/assets/bmk.png)
+![./client/public/assets/nana.png](./client/public/assets/nana.png)
 
 ### Links
 

@@ -20,10 +20,6 @@ export const Movie = () => {
     const [searchWord, setSearchWord] = useState("")
     const navigate = useNavigate();
 
-
-
-
-
     // Function to toggle the bookmark status of a movie
     const toggleBookmark = async (movie) => {
         if (loggedIn === false) {
@@ -105,7 +101,6 @@ export const Movie = () => {
         </div>
     ));
 
-    // Return the array of JSX elements
     return (
         <section>
             <Form

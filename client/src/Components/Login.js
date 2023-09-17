@@ -55,7 +55,6 @@ export const Login = () => {
         setLoading(true);
 
         setTimeout(() => {
-            // After login is complete, set loading to false
             setLoading(false);
         }, 4000);
 
@@ -99,8 +98,9 @@ export const Login = () => {
                         <div className="spinner"></div>
                         <p>Loading...</p>
                     </div> :
-                    <article className="form">
-                        <h2 className="h2 name">Logged In as {name}</h2>
+                    <article className="form block">
+                        <p className="h2 ">Logged In as</p>
+                        <p className="name">{name}</p>
                         <button onClick={handleLogout} className="submit" type="botton">Logout</button>
                     </article>
             }

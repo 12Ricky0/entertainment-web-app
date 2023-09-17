@@ -10,7 +10,6 @@ export const Bookmarked = () => {
 
 
     const { loggedIn, bookmarkedResult, setBookmarkedResult } = useContext(BookmarkContext);
-    // const [bookmarkedResult, setBookmarkedResult] = useState([])
 
     var bookmarkedMovies = data.filter(movie => {
         return bookmarkedResult && bookmarkedResult.some(bookmark => movie.title.includes(bookmark))
@@ -165,10 +164,6 @@ export const Bookmarked = () => {
             <Form
                 onInput={handleSearch}
             />
-            {/* {searchWord ?
-                <h3>Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
-            } */}
-
 
             {searchLength < 1 &&
                 <article>

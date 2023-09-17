@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 export const Series = () => {
 
     const results = data.filter(trend => trend.category === "TV Series");
-    // Use map to generate an array of JSX elements
 
     const [searchResult, setSearchResult] = useState(results)
     const { loggedIn, token, bookmarkedResult, setBookmarkedResult } = useContext(BookmarkContext);
@@ -101,7 +100,6 @@ export const Series = () => {
         </div>
     ));
 
-    // Return the array of JSX elements
     return (
         <section>
             <Form
