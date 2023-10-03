@@ -1,5 +1,6 @@
 
  module.exports = {
+  roots: ['./client/src'],
   // Specify the test environment (e.g., Node.js or jsdom for browser-like testing).
   testEnvironment: 'node',
 
@@ -11,7 +12,7 @@
 
   // Other Jest options you may need (e.g., coverage, setupFiles).
   // ...
-};
+}
   return {
     verbose: true,
   };
