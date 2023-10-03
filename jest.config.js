@@ -1,6 +1,6 @@
 
  module.exports = {
-  roots: ['./client/src'],
+  roots: ['<rootDir>/client/src'],
   // Specify the test environment (e.g., Node.js or jsdom for browser-like testing).
   testEnvironment: 'node',
 
