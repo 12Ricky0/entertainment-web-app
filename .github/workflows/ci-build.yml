@@ -30,6 +30,4 @@ jobs:
         run: |
              npm ci
              npm install react-scripts --save
-
-      - name: Run Tests
     
