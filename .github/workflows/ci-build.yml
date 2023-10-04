@@ -27,9 +27,9 @@ jobs:
 
       - name: Install Dependencies
         working-directory: ./client
-        run: npm ci
+        run: |
+             npm ci
+             npm install react-scripts --save
 
       - name: Run Tests
         run: npm run test
-        env:
-           CI: false
