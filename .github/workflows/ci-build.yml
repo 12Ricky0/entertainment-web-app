@@ -25,11 +25,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Clear npm cache and reinstall
+        run: |
+          rm -rf node_modules
+          npm cache clean -f
+
       - name: Install Dependencies
         working-directory: ./client
         run: |
-             npm ci
+          npm install
 
       - name: Run Tests
         run: npm test
-    

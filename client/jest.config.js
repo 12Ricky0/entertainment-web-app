@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-module.exports = {
-   
-    roots: ['client/src/Components']
-    
-}
-=======
+
 
 module.exports = {
     preset: 'ts-jest',
@@ -18,4 +12,4 @@ module.exports = {
         ],
     }
 }
->>>>>>> test
+

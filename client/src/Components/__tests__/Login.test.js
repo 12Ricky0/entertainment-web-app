@@ -1,6 +1,6 @@
 import { render, fireEvent, screen, waitFor, act, cleanup } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import React, { useContext } from 'react';
+import React from 'react';
 import '@testing-library/jest-dom';
 import { Login } from '../Login';
 import { rest } from 'msw';
