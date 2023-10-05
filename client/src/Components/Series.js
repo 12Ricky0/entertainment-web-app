@@ -70,7 +70,7 @@ export const Series = () => {
 
 
     const seriesElements = searchResult.map(t => (
-        <div key={t.title}>
+        <div data-testid="container" key={t.title}>
             <div style={{ backgroundImage: `url(${isDesktop && t.thumbnail.regular && t.thumbnail.regular.large})`, }} className="recom-container">
                 <div style={{ backgroundImage: `url(${isTablet && t.thumbnail.regular && t.thumbnail.regular.large})`, }} className="recom-container">
                     <div style={{ backgroundImage: `url(${isMobile && t.thumbnail.regular && t.thumbnail.regular.small})`, }} className="recom-container" >
@@ -101,13 +101,13 @@ export const Series = () => {
     ));
 
     return (
-        <section>
+        <section >
             <Form
                 onInput={handleSearch}
             />
             {searchWord ?
-                <h3>Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
-                <h3>Tv Series </h3>
+                <h3 data-testid="search">Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
+                <h3 data-testid="custom-element">Tv Series </h3>
             }
             <div className="div-3">
                 {seriesElements}
