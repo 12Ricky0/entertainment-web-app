@@ -36,4 +36,5 @@ jobs:
           npm install
 
       - name: Run Tests
+        working-directory: ./client
         run: npm test
