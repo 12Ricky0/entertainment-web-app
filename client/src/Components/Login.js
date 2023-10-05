@@ -79,7 +79,7 @@ export const Login = () => {
     }
 
     return (
-        <main className="main">
+        <main data-testid="main" className="main">
             <img className="img" src="assets/logo.svg" alt="Movie" />
             {loggedIn === false ?
                 <form className="form">
@@ -101,7 +101,7 @@ export const Login = () => {
                     <article className="form block">
                         <p className="h2 ">Logged In as</p>
                         <p className="name">{name}</p>
-                        <button onClick={handleLogout} className="submit" type="botton">Logout</button>
+                        <button data-testid="logout-button" onClick={handleLogout} className="submit" type="botton">Logout</button>
                     </article>
             }
         </main>
