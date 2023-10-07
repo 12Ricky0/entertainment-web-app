@@ -73,7 +73,7 @@ export const Bookmarked = () => {
                             <img className="bookmark" alt="Bookmark" src={bookmarkedResult && bookmarkedResult.includes(t.title) ? "assets/icon-bookmark-full.svg" : "assets/icon-bookmark-empty.svg"} />
                         </div>
                         <div className="play-container play-reduced">
-                            <img className="play" alt="Bookmark" src="assets/icon-play.svg" /><b>Play</b>
+                            <img className="play" alt="Book" src="assets/icon-play.svg" /><b>Play</b>
                         </div>
 
                     </div>
@@ -105,7 +105,7 @@ export const Bookmarked = () => {
                             <img className="bookmark" alt="Bookmark" src={bookmarkedResult && bookmarkedResult.includes(t.title) ? "assets/icon-bookmark-full.svg" : "assets/icon-bookmark-empty.svg"} />
                         </div>
                         <div className="play-container play-reduced">
-                            <img className="play" alt="Bookmark" src="assets/icon-play.svg" /><b>Play</b>
+                            <img className="play" alt="Book" src="assets/icon-play.svg" /><b>Play</b>
                         </div>
 
                     </div>
@@ -160,7 +160,7 @@ export const Bookmarked = () => {
 
     return (
         loggedIn && loggedIn === true &&
-        <section>
+        <section data-testid="bookmark-element">
             <Form
                 onInput={handleSearch}
             />
@@ -187,7 +187,7 @@ export const Bookmarked = () => {
 
             {searchLength > 1 &&
                 <article>
-                    <h3>Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
+                    <h3 data-testid="search">Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
 
                     <div className="div-3">
                         {searchElement}

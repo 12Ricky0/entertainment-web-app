@@ -109,7 +109,7 @@ export const Series = () => {
                 <h3 data-testid="search">Found {searchLength} {searchLength > 1 ? 'Results' : 'Result'} For '{searchWord}'</h3> :
                 <h3 data-testid="custom-element">Tv Series </h3>
             }
-            <div className="div-3">
+            <div data-testid="series-element" className="div-3">
                 {seriesElements}
             </div>
         </section>
