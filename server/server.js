@@ -7,11 +7,6 @@ import jwt from 'jsonwebtoken';
 import bcrypt from "bcrypt";
 const saltRounds = 10;
 
-// const corsOptions = {
-//     origin: 'http://your-client-domain.com', // Specify the allowed origin(s)
-//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Specify allowed HTTP methods
-//     allowedHeaders: 'Authorization,Content-Type', // Specify allowed headers
-// };
 
 
 const app = express();
