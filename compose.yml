@@ -21,4 +21,13 @@ services:
     ports:
       - "3001:3001"
     environment:
-      - ME_CONFIG_MONGODB_URL=mongodb+srv://temple4b:okX5u1gadErGcuer@cluster0.5vebfpi.mongodb.net/movieDB
+      - ME_CONFIG_MONGODB_URL={MONGODB_URI}
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /usr/src/app/node_modules
+      - ./client:/usr/src/app
+    ports:
+      - "3000:3000"
