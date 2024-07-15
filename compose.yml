@@ -4,8 +4,8 @@ services:
     # restart: always
     env_file: ./server/.env
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=temple4b
-      - MONGO_INITDB_ROOT_PASSWORD=okX5u1gadErGcuer
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
     ports:
       - "27017:27017"
   server:
