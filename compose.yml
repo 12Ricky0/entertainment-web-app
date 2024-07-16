@@ -8,6 +8,16 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
     ports:
       - "27017:27017"
+  nginx:
+    depends_on:
+      - api
+      - client
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./nginx
+    ports:
+      - "80:80"
+    restart: always
   api:
     depends_on:
       - mongo
@@ -27,3 +37,5 @@ services:
     volumes:
       - /usr/src/app/node_modules
       - ./client:/usr/src/app
+    environment:
+      - WDS_SOCKET_PORT=0
