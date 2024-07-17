@@ -9,12 +9,12 @@ before_install:
 script: docker run -e CI=true richaddo/dev-client npm run test -- --coverage
 
 after_success:
-  - docker build -t richaddo/prod-client ./client
-  - docker build -t richaddo/prod-server ./server
-  - docker build -t richaddo/nginx ./nginx
+  - docker build -t temple4b/prod-client ./client
+  - docker build -t temple4b/prod-server ./server
+  - docker build -t temple4b/nginx ./nginx
   # Login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push images to Docker Hub
-  - docker push richaddo/prod-client
-  - docker push richaddo/nginx
-  - docker push richaddo/prod-server
+  - docker push temple4b/prod-client
+  - docker push temple4b/nginx
+  - docker push temple4b/prod-server
