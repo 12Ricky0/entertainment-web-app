@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t richaddo/dev-client -f Dockerfile.dev ./client/Dockerfile.dev ./client
+  - docker build -t richaddo/dev-client -f ./client/Dockerfile.dev ./client
 
 script: docker run -e CI=true richaddo/dev-client npm run test -- --coverage
 
