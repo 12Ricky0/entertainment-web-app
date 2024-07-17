@@ -1,0 +1,17 @@
+sudo: required
+
+before_install:
+  - docker build -t richaddo/dev-client -f Dockerfile.dev ./client/Dockerfile.dev ./client
+
+script: docker run -e CI=true richaddo/dev-client npm run test -- --coverage
+
+after_success:
+  - docker build -t richaddo/prod-client ./client
+  - docker build -t richaddo/prod-server ./server
+  - docker build -t richaddo/nginx ./nginx
+  # Login to the docker CLI
+  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD"
+  # Push images to Docker Hub
+  - docker push richaddo/prod-client
+  - docker push richaddo/nginx
+  - docker push richaddo/prod-server
