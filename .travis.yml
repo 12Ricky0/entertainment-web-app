@@ -13,7 +13,7 @@ after_success:
   - docker build -t richaddo/prod-server ./server
   - docker build -t richaddo/nginx ./nginx
   # Login to the docker CLI
-  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD"
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push images to Docker Hub
   - docker push richaddo/prod-client
   - docker push richaddo/nginx
