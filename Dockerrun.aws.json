@@ -1,1 +1,28 @@
-{}
+{
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "temple4b/prod-client",
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "temple4b/prod-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "temple4b/nginx",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ],
+      "links": ["client", "server"]
+    }
+  ]
+}
