@@ -50,45 +50,34 @@ Users should be able to:
 
 ### Detailed Example
 
-````markdown
-## Running Tests
-
 To run tests, follow these steps:
 
-1. **Clone the repository**:
+```bash
+git clone https://github.com/12Ricky0/entertainment-web-app.git
+```
 
-   ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
-   ```
+```bash
+cd entertainment-web-app
+```
 
-2. **Navigate to the project directory**:
+```bash
+npm install
+```
 
-   ```sh
-   cd your-repo-name
-   ```
-
-3. **Install dependencies**:
-
-   ```sh
-   npm install
-   ```
-
-4. **Run the tests**:
-   ```sh
-   npm test
-   ```
+```bash
+npm test
+```
 
 ### Example Test Output
 
-````sh
 > your-project-name@1.0.0 test /path/to/your/project
 > mocha
 
-  Your Project Tests
-    ✓ should pass this test
-    ✓ should pass another test
+Your Project Tests
+✓ should pass this test
+✓ should pass another test
 
-  2 passing (100ms)
+2 passing (100ms)
 
 ### Built with
 
@@ -116,7 +105,8 @@ To run tests, follow these steps:
   justify-content: center;
   align-items: center;
 }
-````
+```
+
 ````
 
 ```js
@@ -143,3 +133,4 @@ const bookmarkedMovies = data.filter((movie) => {
 
 - Frontend Mentor - [@12Ricky0](https://www.frontendmentor.io/profile/12Ricky0)
 - Instagram - [@temple4b](https://www.instagram.com/temple4b)
+````
