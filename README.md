@@ -9,6 +9,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Tutorial](#tutorial)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -40,6 +41,55 @@ Users should be able to:
 
 ## My process
 
+### Tutorial:
+
+1. **Clone the Repository**: Provide a command to clone the repository.
+2. **Navigate to the Project Directory**: Navigate into the project directory.
+3. **Install Dependencies**: Provide a command to install project dependencies.
+4. **Run the Tests**: Provide a command to run the tests.
+
+### Detailed Example
+
+````markdown
+## Running Tests
+
+To run tests, follow these steps:
+
+1. **Clone the repository**:
+
+   ```sh
+   git clone https://github.com/yourusername/your-repo-name.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```sh
+   cd your-repo-name
+   ```
+
+3. **Install dependencies**:
+
+   ```sh
+   npm install
+   ```
+
+4. **Run the tests**:
+   ```sh
+   npm test
+   ```
+
+### Example Test Output
+
+````sh
+> your-project-name@1.0.0 test /path/to/your/project
+> mocha
+
+  Your Project Tests
+    ✓ should pass this test
+    ✓ should pass another test
+
+  2 passing (100ms)
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -66,7 +116,8 @@ Users should be able to:
   justify-content: center;
   align-items: center;
 }
-```
+````
+````
 
 ```js
 const proudOfThisFunc = () => {
