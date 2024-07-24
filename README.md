@@ -11,7 +11,6 @@
 - [My process](#my-process)
   - [Tutorial](#tutorial)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -43,10 +42,11 @@ Users should be able to:
 
 ### Tutorial:
 
-1. **Clone the Repository**: Provide a command to clone the repository.
-2. **Navigate to the Project Directory**: Navigate into the project directory.
-3. **Install Dependencies**: Provide a command to install project dependencies.
-4. **Run the Tests**: Provide a command to run the tests.
+1. **Clone the Repository**
+2. **Navigate to the Project Directory**
+3. **Install Dependencies**
+4. **Run the Tests**
+5. **Run the app as a container**
 
 ### Detailed Example
 
@@ -66,6 +66,10 @@ npm install
 
 ```bash
 npm test
+```
+
+```bash
+docker compose up
 ```
 
 ### Example Test Output
@@ -90,47 +94,16 @@ Your Project Tests
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned
-
-```css
-.loading-spinner {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-```
-
-````
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-
-const bookmarkedMovies = data.filter((movie) => {
-  return (
-    bookmarkedResult &&
-    bookmarkedResult.some((bookmark) => movie.title.includes(bookmark))
-  );
-});
-```
-
 ### Continued development
 
 - MERN Stack: Build more advanced projects as a full stack so I can easily integrate the backend whe the frontend.
 - React Router: Explore the various aspects of the react router.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ## Author
 
 - Frontend Mentor - [@12Ricky0](https://www.frontendmentor.io/profile/12Ricky0)
 - Instagram - [@temple4b](https://www.instagram.com/temple4b)
-````
+
+```
+
+```
